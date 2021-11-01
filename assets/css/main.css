@@ -22,3 +22,21 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+}

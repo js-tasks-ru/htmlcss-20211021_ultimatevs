@@ -1,9 +1,76 @@
 .wrapper {
-    display: flex;
-    width: 354px;
-    height: 185px;
-    background: var(--white);
-    border: 1px solid var(--grey-3);
-    box-sizing: border-box;
-    border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 354px;
+  height: 185px;
+  background-color: white;
+  border: 1px solid rgb(161, 160, 160);
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.block1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.block1-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50px;
+  width: 200px;
+}
+
+.name {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+  margin: 0;
+}
+
+.quantity {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--black);
+  margin: 0;
+}
+
+.common {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #4263EB;
+  padding-top: 5px;
+}
+
+/* histogram*/
+.columns {
+  display: flex;
+  align-items: stretch;
+  align-self: center;
+  height: 50px;
+  width: 300px;
+}
+
+.column-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+.column-bar {
+  border-right: 1px solid var(--grey-3);
+  background-color: #4263EB;
 }

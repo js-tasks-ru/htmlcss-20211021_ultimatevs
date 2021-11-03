@@ -1,4 +1,8 @@
 /* Стилизация аккордеона */
+.accordion {
+    display: inline-block;
+}
+
 .accordion__item {
     width: 730px;
     border: 1px solid var(--grey-3);
@@ -7,6 +11,7 @@
     margin-bottom: 8px;
     box-sizing: border-box;
 }
+
 .accordion__item:last-child {
     margin-bottom: 0;
 }
@@ -17,6 +22,7 @@
 
 .accordion__summary {
     display: block;
+    position: relative;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -37,4 +43,13 @@
     line-height: 24px;
     width: 650px;
     margin: 0;
+}
+
+.accordion__arrow {
+    position: absolute;
+    left: 650px;
+}
+
+.accordion__item[open] .accordion__arrow {
+    transform: rotate(180deg);
 }

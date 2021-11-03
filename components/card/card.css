@@ -9,14 +9,6 @@
     flex-basis: 350px;
 }
 
-.cards-wrapper {
-    display: flex;
-    height: 765px;
-    justify-content: space-evenly;
-    flex-flow: row wrap;
-    align-content: space-around;
-}
-
 .card__text {
     font-style: normal;
     font-weight: 500;

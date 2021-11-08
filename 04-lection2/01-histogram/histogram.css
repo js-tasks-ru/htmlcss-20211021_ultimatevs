@@ -1,76 +1,66 @@
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 354px;
-  height: 185px;
-  background-color: white;
-  border: 1px solid rgb(161, 160, 160);
+.histogram {
+  background-color: var(--white);
+  border: 1px solid var(--grey-3);
+  padding: 16px 24px 24px 24px;
   box-sizing: border-box;
   border-radius: 8px;
+  max-width: 354px;
 }
 
-.block1 {
+.histogram__headline-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.block1-1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 50px;
-  width: 200px;
-}
-
-.name {
+.histogram__header {
   font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: var(--black);
-  margin: 0;
+  margin: 0 0 6px 0;
 }
 
-.quantity {
+.histogram___view {
   font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 3px;
+  color: #4263EB;
+}
+
+.histogram__total {
+  font-family: 'Inter', sans-serif;
   font-size: 20px;
   line-height: 26px;
   color: var(--black);
-  margin: 0;
+  margin: 0 0 39px 0;
 }
 
-.common {
+.histogram__view {
   font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  cursor: pointer;
   font-size: 16px;
   line-height: 24px;
   color: #4263EB;
   padding-top: 5px;
 }
 
-/* histogram*/
-.columns {
+.histogram__bars {
   display: flex;
-  align-items: stretch;
-  align-self: center;
+  flex-direction: row;
+  justify-content: stretch;
+  flex-wrap: nowrap;
+  align-items: flex-end;
   height: 50px;
-  width: 300px;
+  width: 95%;
 }
 
-.column-container {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-end;
+.histogram__bar {
+  flex: 1 0 auto;
+  margin-right: 1px;
+  background: #4263EB;
 }
 
-.column-bar {
-  border-right: 1px solid var(--grey-3);
-  background-color: #4263EB;
+.histogram__bar:last-child {
+  margin-right: 0;
 }

@@ -7,7 +7,7 @@
   max-width: 354px;
 }
 
-.histogram__headline-container {
+.histogram__header-container {
   display: flex;
   justify-content: space-between;
 }

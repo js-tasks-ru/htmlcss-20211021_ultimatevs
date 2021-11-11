@@ -28,7 +28,7 @@
 .skeleton__header-lines {
     display: flex;
     flex-direction: column;
-    width: 435px;
+    width: 85%;
 }
 
 .skeleton__body {

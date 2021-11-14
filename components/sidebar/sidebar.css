@@ -1,0 +1,37 @@
+.sidebar {
+    width: 226px;
+}
+
+.sidebar__title {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--black);
+}
+
+.sidebar__menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__item {
+    text-decoration: none;
+    color: var(--black);
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 4px;
+}
+
+.sidebar__item:hover, .sidebar__item:active {
+    color: #D84910;
+}
+
+.sidebar__item:last-child {
+    margin-bottom: 0px;
+    margin-top: 26px;
+}

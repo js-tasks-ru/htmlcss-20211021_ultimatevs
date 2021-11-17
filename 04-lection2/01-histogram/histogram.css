@@ -20,12 +20,13 @@
   margin: 0 0 6px 0;
 }
 
-.histogram___view {
+.histogram__view {
   font-family: 'Inter', sans-serif;
+  cursor: pointer;
   font-size: 16px;
   line-height: 24px;
   margin-top: 3px;
-  color: #4263EB;
+  color: var(--blue);
 }
 
 .histogram__total {
@@ -34,15 +35,6 @@
   line-height: 26px;
   color: var(--black);
   margin: 0 0 39px 0;
-}
-
-.histogram__view {
-  font-family: 'Inter', sans-serif;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
-  color: #4263EB;
-  padding-top: 5px;
 }
 
 .histogram__bars {
@@ -58,7 +50,7 @@
 .histogram__bar {
   flex: 1 0 auto;
   margin-right: 1px;
-  background: #4263EB;
+  background: var(--blue);
 }
 
 .histogram__bar:last-child {

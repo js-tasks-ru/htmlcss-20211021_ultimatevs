@@ -1,6 +1,5 @@
 .toggle {
     display: inline-block;
-    margin-bottom: 20px;
 }
 
 .toggle__input {
@@ -30,7 +29,7 @@
 
 .toggle__icon {
     position: absolute;
-    left: 2%;
+    left: 2px;
     top: 50%;
     transform: translateY(-50%);
     background-color: var(--grey-2);
@@ -57,7 +56,7 @@
 
 .toggle__input:checked ~ .toggle__state .toggle__icon {
     background-color: var(--white);
-    left: 48%;
+    left: 24px;
 }
 
 .toggle__input:focus ~ .toggle__state .toggle__label {

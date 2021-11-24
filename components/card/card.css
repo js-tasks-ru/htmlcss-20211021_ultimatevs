@@ -1,7 +1,8 @@
 .card {
+    position: relative;
     display: flex;
-    flex-direction: column-reverse;
-    align-content: center;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--white);
     box-shadow: 0px 2px 4px rgb(33, 36, 41, 0.05);
     border-radius: 12px;
@@ -9,11 +10,28 @@
     flex-basis: 350px;
 }
 
-.card__text {
-    font-style: normal;
+.card__body {
+    
+}
+
+.card__footer {
+    position: absolute;
+    bottom: 38px;
+}
+
+.card__footer-name {
+    font-family: 'Roboto', sans-serif;
+    font-style: medium;
     font-weight: 500;
     font-size: 21px;
     line-height: 25px;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 6px;
+}
+
+.card__footer-type {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 18.75px;
+    text-align: center;
 }

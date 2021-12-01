@@ -1,13 +1,15 @@
 .preview {
     background-color: #f9fafc;
-    height: 1036px;
 }
 
 .preview__cards-list {
     display: flex;
     padding-top: 53px;
-    height: 765px;
     justify-content: space-evenly;
     flex-flow: row wrap;
     align-content: space-around;
+}
+
+.preview__card {
+    margin-bottom: 20px;
 }

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- Главная страница -->
+<html lang="ru">
+<head>
+    <title>HTML/CSS project</title>
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../components/component/component.css">
+    <link rel="stylesheet" href="../components/sidebar/sidebar.css">
+    <link rel="stylesheet" href="./page.css">
+    <link rel="stylesheet" href="../components/modal/modal.css">
+    <link rel="stylesheet" href="../components/button/button.css">
+    <link rel="stylesheet" href="../components/form/form.css">
+    <link rel="stylesheet" href="../components/input/input.css">
+    <link rel="stylesheet" href="../components/tabs/tabs.css">
+</head>
+<body>
+    <div class="page">
+        <div class="page__header">
+            <div class="page-container">
+                <h2>Header</h2>
+            </div>
+        </div>
+        <div class="page__main">
+            <div class="sidebar">
+                <h4 class="sidebar__title">Components</h4>
+                <nav class="sidebar__menu">
+                    <a class="sidebar__item" href="./modal.html">Modal</a>
+                    <a class="sidebar__item" href="./tooltip.html">Tooltip</a>
+                    <a class="sidebar__item" href="./avatar.html">Avatar</a>
+                    <a class="sidebar__item" href="./calendar.html">Calendar</a>
+                    <a class="sidebar__item" href="./histogram.html">Histogram</a>
+                    <a class="sidebar__item" href="./form.html">Custom form element</a>
+                    <a class="sidebar__item" href="../index.html">Main page</a>
+                </nav>
+            </div>
+            <div class="component">
+                <h3 class="component__title">Modal</h3>
+                <button id='modal-open' class="btn btn_primary">Basic CSS-Only Modal</button>
+                <div id="modal" class="modal">
+                    <div class="modal__content">
+                        <div class="modal__header">
+                            <div class="modal__header-title">Modal title</div>
+                            <svg class="modal__header-close" id="modal-close">
+                                <use href="../../assets/icons/sprite.svg#cross" />
+                            </svg>
+                        </div>
+                        <div class="modal__body">
+                            <div class="input">
+                                <label for="validationServer01" class="input__label">NAME</label>
+                                <div class="input__control-wrapper">
+                                    <input type="text" class="input__control" id="validationServer01" />
+                                    <svg class="input__control-icon input__control-icon_success">
+                                        <use href="../../assets/icons/sprite.svg#success" />
+                                    </svg>
+                                    <svg class="input__control-icon input__control-icon_error">
+                                        <use href="../../assets/icons/sprite.svg#error" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="input modal-margin-top">
+                                <label for="validationServer02" class="input__label">EMAIL</label>
+                                <div class="input__control-wrapper">
+                                    <input type="text" class="input__control" id="validationServer02" />
+                                    <svg class="input__control-icon input__control-icon_success">
+                                        <use href="../../assets/icons/sprite.svg#success" />
+                                    </svg>
+                                    <svg class="input__control-icon input__control-icon_error">
+                                        <use href="../../assets/icons/sprite.svg#error" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <button class="btn btn_primary modal-margin-top">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabs">
+                    <input class="tabs__input" type="radio" id="html-tab" name="group" checked />
+                    <input class="tabs__input" type="radio" id="css-tab" name="group" />
+    
+                    <div class="tabs__scroller">
+                        <label class="tabs__scroller-html" for="html-tab">HTML</label>
+                        <label class="tabs__scroller-css" for="css-tab">CSS</label>
+                    </div>
+                    <div class="tabs__divider"></div>
+                    <div class="tabs__content tabs__content_html">
+                        1
+                    </div>
+                    <div class="tabs__content tabs__content_css">
+                        2
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page__footer">
+            <div class="page-container">
+                <h3>Reusable component library</h3>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="../assets/scripts/index.js"></script>
+</html>

@@ -8,6 +8,12 @@
   background-color: rgba(196, 196, 196, 0.5);
 }
 
+.modal_preview {
+  position: relative;
+  display: inline-block;
+  background-color: var(--white);
+}
+
 .modal__content {
     position: absolute;
     border-radius: 8px;
@@ -17,6 +23,15 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.modal__content_mod {
+  border: 1px solid var(--grey-3);
+  max-width: 250px;
+  width: 100%;
+  padding: 20px 30px 23px 30px;
+  border-radius: 8px;
+  background-color: var(--white);
 }
 
 .modal__header {
@@ -50,4 +65,8 @@
   line-height: 24px;
   color: var(--grey-4);
   margin: 0;
+}
+
+.modal-margin-top {
+  margin-top: 20px;
 }

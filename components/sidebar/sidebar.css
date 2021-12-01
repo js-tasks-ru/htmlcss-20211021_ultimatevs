@@ -1,5 +1,9 @@
 .sidebar {
     width: 226px;
+    grid-area: sidebar;
+    padding-left: 15px;
+    box-sizing: border-box;
+    background-color: var(--grey-1);
 }
 
 .sidebar__title {

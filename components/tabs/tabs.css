@@ -1,0 +1,63 @@
+.tabs {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.tabs__input {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    opacity: 0;
+    outline: none;
+}
+
+.tabs__scroller {
+    display: flex;
+    flex-direction: row;
+    max-width: 100px;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+    padding-top: 40px;
+}
+
+.tabs__divider {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    height: 1px;
+    background-color: var(--grey-2);
+}
+
+.tabs__content {
+    display: none;
+    padding-top: 50px;
+}
+
+.tabs__scroller-html, .tabs__scroller-css {
+    cursor: pointer;
+    padding-bottom: 2px;
+}
+
+.tabs__content_html {
+
+}
+
+.tabs__content_css {
+
+}
+
+#html-tab:checked ~ .tabs__scroller .tabs__scroller-html,
+#css-tab:checked ~ .tabs__scroller .tabs__scroller-css {
+    border-bottom: 5px solid var(--black);
+}
+
+#html-tab:checked ~ .tabs__content_html,
+#css-tab:checked ~ .tabs__content_css {
+    display: block;
+}

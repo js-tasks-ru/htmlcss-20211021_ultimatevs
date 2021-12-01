@@ -25,6 +25,7 @@
 
 .tooltip__helper_preview {
   display: block;
+  padding: 13px 26px 8px 26px;
 }
 
 .tooltip__helper::after {

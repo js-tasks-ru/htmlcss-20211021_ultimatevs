@@ -10,6 +10,8 @@
 }
 
 .page__header {
+    display: flex;
+    align-items: center;
     height: 82px;
     background-color: var(--grey-1);
     grid-area: header;
@@ -27,6 +29,11 @@
 }
 
 .page__footer {
+    background-color: var(--grey-1);
+    grid-area: footer;
+}
+
+.page__footer-title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,12 +45,11 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--grey-3);
-    background-color: var(--grey-1);
-    grid-area: footer;
 }
 
 .page-container {
-    padding: 0 15px;
+    width: 100%;
+    padding-left: 15px;
     margin: 0 auto;
     max-width: 1140px;
     box-sizing: border-box;

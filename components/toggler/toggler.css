@@ -49,6 +49,27 @@
     margin-left: 12px;
 }
 
+.toggle__label-svg-rigth {
+    margin-left: 15px;
+    color: var(--black);
+}
+
+.toggle__label-svg-left {
+    margin-right: 15px;
+}
+
+.toggle__label-svg-rigth-moon {
+    width: 24px;
+    height: 24px;
+    color: var(--grey-3);
+}
+
+.toggle__label-svg-left-sun {
+    width: 24px;
+    height: 24px;
+    color: var(--grey-4);
+}
+
 .toggle__input:checked ~ .toggle__state .toggle__control {
     background-color: var(--blue);
     border-color: var(--blue);

@@ -10,12 +10,43 @@
     <link rel="stylesheet" href="./page.css">
     <link rel="stylesheet" href="../components/tooltip/tooltip.css">
     <link rel="stylesheet" href="../components/tabs/tabs.css">
+    <link rel="stylesheet" href="../components/toggler/toggler.css">
+    <link rel="stylesheet" href="../components/menu/menu.css">
 </head>
 <body>
     <div class="page">
         <div class="page__header">
             <div class="page-container">
-                <h2>Header</h2>
+                <div class="menu">
+                    <svg class="menu__logo">
+                        <use href="../../assets/icons/sprite.svg#logo" />
+                    </svg>
+                    <div class="menu__bar">
+                        <nav class="menu__bar-items">
+                            <a class="menu__bar-items-item" href="../index.html">Components</a>
+                            <a class="menu__bar-items-item" href="./about.html">About</a>
+                            <a class="menu__bar-items-item" href="./contacts.html">Contacts</a>
+                        </nav>
+                        <label class="toggle">
+                            <input class="toggle__input" type="checkbox"/>
+                            <div class="toggle__state">
+                                <div class="toggle__label-svg-left">
+                                    <svg class="toggle__label-svg-left-sun">
+                                        <use href="../../assets/icons/sprite.svg#sun" />
+                                    </svg>
+                                  </div> 
+                              <div class="toggle__control">
+                                <span class="toggle__icon"></span>
+                              </div>
+                              <div class="toggle__label-svg-rigth">
+                                <svg class="toggle__label-svg-rigth-moon">
+                                    <use href="../../assets/icons/sprite.svg#moon" />
+                                </svg>
+                              </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="page__main">

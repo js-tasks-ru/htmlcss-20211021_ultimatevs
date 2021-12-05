@@ -1,5 +1,6 @@
 .modal {
   display: none;
+  z-index: 999;
   position: fixed;
   left: 0;
   top: 0;
@@ -15,14 +16,14 @@
 }
 
 .modal__content {
-    position: absolute;
-    border-radius: 8px;
-    background-color: var(--white);
-    padding: 30px 40px 33px 40px;
-    max-width: 348px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 8px;
+  background-color: var(--white);
+  padding: 30px 40px 33px 40px;
+  max-width: 348px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal__content_mod {

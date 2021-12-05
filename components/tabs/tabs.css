@@ -44,14 +44,6 @@
     padding-bottom: 2px;
 }
 
-.tabs__content_html {
-
-}
-
-.tabs__content_css {
-
-}
-
 #html-tab:checked ~ .tabs__scroller .tabs__scroller-html,
 #css-tab:checked ~ .tabs__scroller .tabs__scroller-css {
     border-bottom: 5px solid var(--black);

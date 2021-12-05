@@ -16,3 +16,8 @@
     margin: 0;
     padding-bottom: 56px;
 }
+
+.component_tooltip {
+    margin-left: 40px;
+    margin-top: 20px;
+}

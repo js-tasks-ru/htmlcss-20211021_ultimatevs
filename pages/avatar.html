@@ -18,9 +18,11 @@
         <div class="page__header">
             <div class="page-container">
                 <div class="menu">
-                    <svg class="menu__logo">
-                        <use href="../../assets/icons/sprite.svg#logo" />
-                    </svg>
+                    <a style="color: var(--black);" href="../index.html">
+                        <svg class="menu__logo">
+                            <use href="../../assets/icons/sprite.svg#logo" />
+                        </svg>
+                    </a>
                     <div class="menu__bar">
                         <nav class="menu__bar-items">
                             <a class="menu__bar-items-item" href="../index.html">Components</a>
@@ -77,17 +79,38 @@
                     </div>
                     <div class="tabs__divider"></div>
                     <div class="tabs__content tabs__content_html">
-                        1
+                        <pre class="code">
+                            <code class="code__code">
+&lt;div class=&quot;avatar&quot;&gt;
+    &lt;img class=&quot;avatar__img&quot; src=&quot;../components/avatar/public/avatar-200.jpg&quot; alt=&quot;Avatar image&quot; /&gt;
+&lt;/div&gt;
+                            </code>
+                        </pre>
                     </div>
                     <div class="tabs__content tabs__content_css">
-                        2
+                        <pre class="code">
+                            <code class="code__code">
+.avatar {
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+                            </code>
+                        </pre>
                     </div>
                 </div>
             </div>
         </div>
         <div class="page__footer">
             <div class="page-container">
-                <h3>Reusable component library</h3>
+                <h3 class="page__footer-title">Reusable component library</h3>
             </div>
         </div>
     </div>

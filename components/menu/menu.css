@@ -1,7 +1,19 @@
 .menu {
     display: flex;
+    position: relative;
     justify-content: space-between;
-    flex-direction: row;
+}
+
+.menu__burger {
+    display: none;
+    color: var(--black);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
 }
 
 .menu__logo {
@@ -32,4 +44,19 @@
 
 .menu__bar-items-item:visited {
     color: var(--black);
+}
+
+@media screen and (min-resolution: 2dppx) {
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu__burger {
+        display: inline-flex;
+    }
+
+    .menu__bar {
+        display: none;
+    }
 }

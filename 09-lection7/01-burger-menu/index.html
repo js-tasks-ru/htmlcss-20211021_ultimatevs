@@ -2,11 +2,35 @@
 <!-- Страница бургер-меню -->
 <html lang="ru">
     <head>
+        <meta name="viewport" content="width=device-width initial-scale=1" />
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./burger-menu.css">
         <script defer src="./burger-menu.js"></script>
     </head>
-    <body>
-
+    <body class="preload">
+        <button type="button" id="burger-menu-open" class="burger-menu__button-open">
+            <svg class="burger-menu__icon-open">
+                <use href="../../assets/icons/sprite.svg#menu"/>
+            </svg>
+        </button>
+        <div class="burger-menu" id="burger-menu">
+            <div class="burger-menu__window">
+                <button type="button" class="burger-menu__button-close" id="burger-menu-close">
+                    <svg class="burger-menu__icon-close">
+                        <use href="../../assets/icons/sprite.svg#quit"/>
+                    </svg>
+                </button>
+                <h4 class="burger-menu__title">Components</h4>
+                <nav class="burger-menu__list">
+                    <a class="burger-menu__item" href="../../pages/modal.html">Modal</a>
+                    <a class="burger-menu__item" href="../../pages/tooltip.html">Tooltip</a>
+                    <a class="burger-menu__item" href="../../pages/avatar.html">Avatar</a>
+                    <a class="burger-menu__item" href="../../pages/calendar.html">Calendar</a>
+                    <a class="burger-menu__item" href="../../pages/histogram.html">Histogram</a>
+                    <a class="burger-menu__item" href="../../pages/form.html">Custom form element</a>
+                    <a class="burger-menu__item" href="../../index.html">Main page</a>
+                </nav>
+            </div>
+        </div>
     </body>
 </html>

@@ -5,7 +5,7 @@
     background-color: var(--white);
     box-shadow: 0px 2px 4px rgb(33, 36, 41, 0.05);
     border-radius: 12px;
-    height: 367px;
+    min-height: 367px;
     flex-basis: 350px;
     text-decoration: none;
     color: var(--black);
@@ -47,6 +47,10 @@
     padding-bottom: 30px;
 }
 
-.inner-card__body {
+.card__checkbox {
+    margin-bottom: 16px;
+}
+
+.card__radio {
     margin-bottom: 16px;
 }

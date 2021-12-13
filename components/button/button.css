@@ -20,7 +20,7 @@
 
 .btn:disabled {
   opacity: 0.5;
-  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .btn_primary {
@@ -46,7 +46,7 @@
 }
 
 .btn_alternate:hover {
-  border: 1px solid #212429;
+  border: 1px solid var(--grey-5);
 }
 
 .btn_alternate:disabled {

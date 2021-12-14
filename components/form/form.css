@@ -1,0 +1,13 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__item {
+    padding-bottom: 30px;
+}
+
+.form__item_input {
+    display: flex;
+    flex-direction: column;
+}

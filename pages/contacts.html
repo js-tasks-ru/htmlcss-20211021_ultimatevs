@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- Главная страница -->
+<html lang="ru">
+<head>
+    <title>HTML/CSS project</title>
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../components/component/component.css">
+    <link rel="stylesheet" href="../components/sidebar/sidebar.css">
+    <link rel="stylesheet" href="./page.css">
+    <link rel="stylesheet" href="../components/avatar/avatar.css">
+    <link rel="stylesheet" href="../components/tabs/tabs.css">
+    <link rel="stylesheet" href="../components/toggler/toggler.css">
+    <link rel="stylesheet" href="../components/menu/menu.css">
+</head>
+<body>
+    <div class="inner-page">
+        <div class="inner-page__header">
+            <div class="inner-page-container">
+                <div class="menu">
+                    <svg class="menu__burger">
+                        <use href="../../assets/icons/sprite.svg#menu"/>
+                    </svg>
+                    <a style="color: var(--black);" href="../index.html">
+                        <svg class="menu__logo">
+                            <use href="../../assets/icons/sprite.svg#logo" />
+                        </svg>
+                    </a>
+                    <div class="menu__bar">
+                        <nav class="menu__bar-items">
+                            <a class="menu__bar-items-item" href="../index.html">Components</a>
+                            <a class="menu__bar-items-item" href="./about.html">About</a>
+                            <a class="menu__bar-items-item" href="./contacts.html">Contacts</a>
+                        </nav>
+                        <label class="toggle toggle_header">
+                            <input class="toggle__input" type="checkbox"/>
+                            <div class="toggle__state">
+                                <div class="toggle__label-svg-left">
+                                    <svg class="toggle__label-svg-left-sun">
+                                        <use href="../../assets/icons/sprite.svg#sun" />
+                                    </svg>
+                                  </div> 
+                              <div class="toggle__control">
+                                <span class="toggle__icon"></span>
+                              </div>
+                              <div class="toggle__label-svg-rigth">
+                                <svg class="toggle__label-svg-rigth-moon">
+                                    <use href="../../assets/icons/sprite.svg#moon" />
+                                </svg>
+                              </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inner-page__main">
+            <div class="sidebar">
+                <h4 class="sidebar__title">Components</h4>
+                <nav class="sidebar__menu">
+                    <a class="sidebar__item" href="./modal.html">Modal</a>
+                    <a class="sidebar__item" href="./tooltip.html">Tooltip</a>
+                    <a class="sidebar__item" href="./avatar.html">Avatar</a>
+                    <a class="sidebar__item" href="./calendar.html">Calendar</a>
+                    <a class="sidebar__item" href="./histogram.html">Histogram</a>
+                    <a class="sidebar__item" href="./form.html">Custom form element</a>
+                    <a class="sidebar__item" href="../index.html">Main page</a>
+                </nav>
+            </div>
+            <div class="component">
+                CONTACTS
+            </div>
+        </div>
+        <div class="inner-page__footer">
+            <div class="inner-page-container">
+                <h3 class="inner-page__footer-title">Reusable component library</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

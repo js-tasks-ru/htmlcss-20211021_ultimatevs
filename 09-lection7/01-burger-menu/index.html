@@ -5,18 +5,19 @@
         <meta name="viewport" content="width=device-width initial-scale=1" />
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./burger-menu.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script defer src="./burger-menu.js"></script>
     </head>
     <body class="preload">
-        <button type="button" id="burger-menu-open" class="burger-menu__button-open">
-            <svg class="burger-menu__icon-open">
+        <button type="button" id="burger-menu-open" class="button button_open">
+            <svg class="button__icon">
                 <use href="../../assets/icons/sprite.svg#menu"/>
             </svg>
         </button>
         <div class="burger-menu" id="burger-menu">
             <div class="burger-menu__window">
-                <button type="button" class="burger-menu__button-close" id="burger-menu-close">
-                    <svg class="burger-menu__icon-close">
+                <button type="button" class="button button_close" id="burger-menu-close">
+                    <svg class="button__icon">
                         <use href="../../assets/icons/sprite.svg#quit"/>
                     </svg>
                 </button>

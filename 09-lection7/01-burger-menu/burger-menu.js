@@ -18,6 +18,6 @@ if (menuClose) {
     });
 }
 
-$(window).load(function() {
+$(document).ready(function() {
     $("body").removeClass("preload");
 });

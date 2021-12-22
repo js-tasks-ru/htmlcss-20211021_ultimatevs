@@ -25,15 +25,15 @@
     --secondary-hover: #5028C6;
 }
 
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 .preload * {
     -webkit-transition: none !important;
     -moz-transition: none !important;
     -ms-transition: none !important;
     -o-transition: none !important;
-}
-
-* {
-    font-family: 'Roboto', sans-serif;
 }
 
 html, body {

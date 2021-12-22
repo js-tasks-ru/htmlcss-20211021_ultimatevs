@@ -17,3 +17,7 @@ if (menuClose) {
         }
     });
 }
+
+$(document).ready(function() {
+    $("body").removeClass("preload");
+});

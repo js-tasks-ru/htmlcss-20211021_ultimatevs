@@ -25,6 +25,11 @@
     --secondary-hover: #5028C6;
 }
 
+html[data-theme-dark] {
+    --white: #212429;
+    --black: #ffffff;
+}
+
 * {
     font-family: 'Roboto', sans-serif;
 }

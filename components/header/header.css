@@ -1,6 +1,6 @@
 .header {
     padding: 20px 0 77px;
-    background-color: var(--white);
+    background-color: var(--header-bg);
     border-bottom: 1px solid var(--grey-2);
 }
 
@@ -10,5 +10,17 @@
     font-weight: 500;
     font-size: 50px;
     line-height: 64px;
-    color: var(--black);
+    color: var(--header);
+}
+
+@media screen and (min-resolution: 2dppx) {
+    .header {
+        padding: 20px 0 69px;
+    }
+    .header__title {
+        font-size: 28px;
+        line-height: 38px;
+        margin: 0;
+        padding-top: 24px;
+    }
 }

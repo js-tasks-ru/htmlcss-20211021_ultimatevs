@@ -16,6 +16,11 @@
     --grey-5: #90A0B7;
     --between: #A0B1F5;
 
+    --header: var(--black);
+    --header-bg: var(--white);
+    --preview: #f9fafc;
+    --card: var(--black);
+    --card-bg: var(--white);
     --error: var(--red);
     --success: var(--blue);
 
@@ -26,8 +31,11 @@
 }
 
 html[data-theme-dark] {
-    --white: #212429;
-    --black: #ffffff;
+    --header: var(--grey-4);
+    --header-bg: var(--black);
+    --preview: var(--grey-4);
+    --card: var(--grey-4);
+    --card-bg: var(--black);
 }
 
 * {
@@ -39,6 +47,7 @@ html[data-theme-dark] {
     -moz-transition: none !important;
     -ms-transition: none !important;
     -o-transition: none !important;
+    transition: none !important;
 }
 
 html, body {

@@ -22,7 +22,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    color: var(--black);
+    color: var(--tabs-scroller);
     padding-top: 40px;
 }
 
@@ -46,7 +46,7 @@
 
 #html-tab:checked ~ .tabs__scroller .tabs__scroller-html,
 #css-tab:checked ~ .tabs__scroller .tabs__scroller-css {
-    border-bottom: 5px solid var(--black);
+    border-bottom: 5px solid var(--tabs-underline);
 }
 
 #html-tab:checked ~ .tabs__content_html,

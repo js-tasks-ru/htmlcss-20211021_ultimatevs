@@ -10,7 +10,7 @@
 
 .button-menu_open {
     display: none;
-    background-color: var(--white);
+    background-color: var(--burger-open-bg);
     position: absolute;
     left: 0;
     top: 50%;
@@ -19,13 +19,13 @@
 
 .button-menu_close {
     border-radius: 50%;
-    background-color: var(--grey-2);
+    background-color: var(--burger-close-bg);
 }
 
 .button-menu__icon {
     width: 24px;
     height: 24px;
-    color: var(--black);
+    color: var(--burger);
 }
 
 @media screen and (min-resolution: 2dppx) {

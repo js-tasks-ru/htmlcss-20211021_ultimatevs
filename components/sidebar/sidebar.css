@@ -3,7 +3,7 @@
     grid-area: sidebar;
     padding-left: 15px;
     box-sizing: border-box;
-    background-color: var(--grey-1);
+    background-color: var(--pages-bg);
 }
 
 .sidebar__title {

@@ -5,4 +5,5 @@
 .code__code {
     max-width: 200px;
     width: 100%;
+    color: var(--code);
 }

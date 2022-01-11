@@ -18,7 +18,7 @@
 
 .toggle__control {
     position: relative;
-    background-color: var(--white);
+    background-color: var(--radio-bg);
     border: 1px solid var(--grey-2);
     border-radius: 16px;
     box-sizing: border-box;
@@ -45,7 +45,7 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    color: var(--grey-4);
+    color: var(--radio-label);
     margin-left: 12px;
 }
 
@@ -61,13 +61,13 @@
 .toggle__label-svg-rigth-moon {
     width: 24px;
     height: 24px;
-    color: var(--grey-3);
+    color: var(--menu-toggle);
 }
 
 .toggle__label-svg-left-sun {
     width: 24px;
     height: 24px;
-    color: var(--grey-4);
+    color: var(--menu-toggle);
 }
 
 .toggle__input:checked ~ .toggle__state .toggle__control {

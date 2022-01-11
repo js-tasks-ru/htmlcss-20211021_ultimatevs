@@ -12,13 +12,13 @@
 .modal_preview {
   position: relative;
   display: inline-block;
-  background-color: var(--white);
+  background-color: var(--modal-prev);
 }
 
 .modal__content {
   position: absolute;
   border-radius: 8px;
-  background-color: var(--white);
+  background-color: var(--modal-bg);
   padding: 30px 40px 33px 40px;
   max-width: 348px;
   left: 50%;
@@ -32,7 +32,7 @@
   width: 100%;
   padding: 20px 30px 23px 30px;
   border-radius: 8px;
-  background-color: var(--white);
+  background-color: var(--modal-bg);
 }
 
 .modal__header {
@@ -48,7 +48,7 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  color: var(--moon);
+  color: var(--modal-header);
 }
 
 .modal__header-close {

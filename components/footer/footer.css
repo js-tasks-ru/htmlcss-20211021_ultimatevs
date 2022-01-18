@@ -1,6 +1,6 @@
 .footer {
     padding: 71px 0 136px;
-    background-color: var(--white);
+    background-color: var(--footer-bg);
     border-top: 1px solid var(--grey-2);
 }
 
@@ -11,7 +11,7 @@
     font-weight: 500;
     font-size: 38px;
     line-height: 48px;
-    
+    color: var(--footer);
 }
 
 .footer__text {
@@ -21,4 +21,16 @@
     font-size: 16px;
     line-height: 24px;
     text-align: center;
+    color: var(--footer);
+}
+
+@media screen and (min-resolution: 2dppx) {
+    .footer {
+        padding: 32px 0;
+    }
+    .footer__title {
+        font-size: 24px;
+        line-height: 26px;
+        margin: 0;
+    }
 }

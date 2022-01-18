@@ -16,13 +16,85 @@
     --grey-5: #90A0B7;
     --between: #A0B1F5;
 
-    --error: var(--red);
-    --success: var(--blue);
-
     --primary: var(--blue);
     --primary-hover: #2342C0;
     --secondary: var(--purple);
     --secondary-hover: #5028C6;
+
+    --header: var(--black);
+    --header-bg: var(--white);
+    --menu-logo: var(--black);
+    --menu-nav: var(--grey-3);
+    --menu-toggle: var(--grey-3);
+    --preview: #f9fafc;
+    --card: var(--black);
+    --card-bg: var(--white);
+    --footer: var(--black);
+    --footer-bg: var(--white);
+
+    --burger-open-bg: var(--white);
+    --burger-close-bg: var(--grey-2);
+    --burger: var(--black);
+    --burger-menu-bg: var(--white);
+    --burger-menu-text: var(--black);
+
+    --error: var(--red);
+    --success: var(--blue);
+
+    --pages-bg: var(--grey-1);
+    --component-title: var(--black);
+    --component-bg: var(--white);
+    --tabs-scroller: var(--black);
+    --tabs-underline: var(--black);
+    --code: var(--black);
+
+    --tooltip: var(--black);
+    --radio-label: var(--grey-4);
+    --radio-control: var(--grey-2);
+    --radio-dis: var(--grey-2);
+    --radio-bg: var(--white);
+    --input-bg: var(--white);
+    --modal-prev: var(--white);
+    --modal-bg: var(--white);
+    --modal-header: var(--moon);
+    --histogram: var(--black);
+    --histogram-bg: var(--white);
+}
+
+html[data-theme-dark] {
+    --header: var(--grey-3);
+    --header-bg: var(--black);
+    --menu-logo: var(--grey-2);
+    --menu-nav: var(--grey-2);
+    --preview: var(--grey-4);
+    --card: var(--grey-3);
+    --card-bg: var(--black);
+    --footer: var(--grey-3);
+    --footer-bg: var(--black);
+
+    --burger-open-bg: var(--grey-4);
+    --burger-close-bg: var(--grey-2);
+    --burger: var(--grey-3);
+    --burger-menu-bg: var(--black);
+    --burger-menu-text: var(--grey-3);
+
+    --pages-bg: var(--grey-4);
+    --component-title: var(--grey-3);
+    --component-bg: var(--black);
+    --tabs-scroller: var(--white);
+    --tabs-underline: var(--white);
+    --code: var(--grey-3);
+
+    --tooltip: var(--blue);
+    --radio-label: var(--grey-2);
+    --radio-dis: var(--grey-3);
+    --radio-bg: var(--black);
+    --input-bg: var(--black);
+    --modal-prev: var(--black);
+    --modal-bg: var(--black);
+    --modal-header: var(--grey-3);
+    --histogram: var(--white);
+    --histogram-bg: var(--black);
 }
 
 * {
@@ -34,6 +106,7 @@
     -moz-transition: none !important;
     -ms-transition: none !important;
     -o-transition: none !important;
+    transition: none !important;
 }
 
 html, body {

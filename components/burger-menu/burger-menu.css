@@ -1,0 +1,59 @@
+.burger-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    transform: translateX(-100vw);
+    transition: transform 200ms ease-in-out;
+    background-color: rgba(196, 196, 196, 0.5);
+}
+
+.burger-menu[data-open] {
+    transform: translateX(0);
+}
+
+.burger-menu__window {
+    background-color: var(--burger-menu-bg);
+    max-width: 375px;
+    width: 100%;
+    height: 100%;
+    padding: 20px 16px;
+    box-sizing: border-box;
+}
+
+.burger-menu__title {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: var(--burger-menu-text);
+}
+
+.burger-menu__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.burger-menu__item {
+    text-decoration: none;
+    color: var(--burger-menu-text);
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 4px;
+}
+
+.burger-menu_button-menu {
+    margin-top: 20px;
+}
+
+@media screen and (min-resolution: 2dppx) {
+    .button_open {
+        display: block;
+    }
+}

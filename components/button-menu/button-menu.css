@@ -1,0 +1,35 @@
+.button-menu {
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    appearance: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.button-menu_open {
+    display: none;
+    background-color: var(--burger-open-bg);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.button-menu_close {
+    border-radius: 50%;
+    background-color: var(--burger-close-bg);
+}
+
+.button-menu__icon {
+    width: 24px;
+    height: 24px;
+    color: var(--burger);
+}
+
+@media screen and (min-resolution: 2dppx) {
+    .button-menu_open {
+        display: block;
+    }
+}

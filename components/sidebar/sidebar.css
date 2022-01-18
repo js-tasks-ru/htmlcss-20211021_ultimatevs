@@ -3,7 +3,7 @@
     grid-area: sidebar;
     padding-left: 15px;
     box-sizing: border-box;
-    background-color: var(--grey-1);
+    background-color: var(--pages-bg);
 }
 
 .sidebar__title {
@@ -38,4 +38,10 @@
 .sidebar__item:last-child {
     margin-bottom: 0px;
     margin-top: 26px;
+}
+
+@media screen and (min-resolution: 2dppx) {
+    .sidebar {
+        display: none;
+    }
 }

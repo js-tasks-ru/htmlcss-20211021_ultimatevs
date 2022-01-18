@@ -16,16 +16,44 @@
     <link rel="stylesheet" href="../components/tabs/tabs.css" />
     <link rel="stylesheet" href="../components/toggler/toggler.css" />
     <link rel="stylesheet" href="../components/menu/menu.css" />
+    <link rel="stylesheet" href="../components/burger-menu/burger-menu.css">
+    <link rel="stylesheet" href="../components/button-menu/button-menu.css">
+    <link rel="stylesheet" href="../components/code/code.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="../assets/scripts/burger-menu.js"></script>
+    <script defer src="../assets/scripts/theme-changer.js"></script>
   </head>
-  <body>
+  <body class="preload">
     <div class="inner-page">
       <div class="inner-page__header">
         <div class="inner-page-container">
           <div class="menu">
-            <svg class="menu__burger">
-              <use href="../../assets/icons/sprite.svg#menu"/>
-            </svg>
-            <a style="color: var(--black)" href="../index.html">
+            <button type="button" id="burger-menu-open" class="button-menu button-menu_open">
+              <svg class="button-menu__icon">
+                  <use href="../../assets/icons/sprite.svg#menu"/>
+              </svg>
+          </button>
+          <div class="burger-menu" id="burger-menu">
+              <div class="burger-menu__window">
+                  <button type="button" class="button-menu button-menu_close burger-menu_button-menu" id="burger-menu-close">
+                      <svg class="button-menu__icon">
+                          <use href="../../assets/icons/sprite.svg#quit"/>
+                      </svg>
+                  </button>
+                  <h4 class="burger-menu__title">Components</h4>
+                  <nav class="burger-menu__list">
+                      <a class="burger-menu__item" href="../../pages/modal.html">Modal</a>
+                      <a class="burger-menu__item" href="../../pages/tooltip.html">Tooltip</a>
+                      <a class="burger-menu__item" href="../../pages/avatar.html">Avatar</a>
+                      <a class="burger-menu__item" href="../../pages/calendar.html">Calendar</a>
+                      <a class="burger-menu__item" href="../../pages/histogram.html">Histogram</a>
+                      <a class="burger-menu__item" href="../../pages/form.html">Custom form element</a>
+                      <a class="burger-menu__item" href="../../index.html">Main page</a>
+                  </nav>
+              </div>
+          </div>
+            <a href="../index.html">
               <svg class="menu__logo">
                 <use href="../../assets/icons/sprite.svg#logo" />
               </svg>
@@ -37,7 +65,7 @@
                 <a class="menu__bar-items-item" href="./contacts.html">Contacts</a>
               </nav>
               <label class="toggle toggle_header">
-                <input class="toggle__input" type="checkbox" />
+                <input class="toggle__input" type="checkbox" id="theme-changer" />
                 <div class="toggle__state">
                   <div class="toggle__label-svg-left">
                     <svg class="toggle__label-svg-left-sun">
